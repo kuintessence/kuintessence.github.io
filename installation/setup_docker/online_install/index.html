@@ -690,20 +690,10 @@
 <p><div class="termy">
 <div class="highlight"><pre><span></span><code><span class="go">// root@localhost:~#</span>
 <span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/nsccjn/kuintessence.git
-</code></pre></div>
-使用 keycloak 注册坤仪·万象 使用者门户账号，参考<a href="https://keycloak.org.cn/documentation.html">keycloak 文档</a>
-将keyclock客户端注册信息加入env.js 
-<div class="highlight"><pre><span></span><code><span class="go">// root@localhost:~#</span>
+<span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>docker-compose
 <span class="gp">$ </span>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
 </code></pre></div>
 </div></p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">配置对象存储</p>
-<p>如果使用minio做为存储
-用户需要先使用 docker-compose.yml 中配置的用户名密码登录（默认为 <code>root : minioadmin</code> ），并自行创建并授权 access_token 、 secret_key，将其配置到 Postgres 的 storage_server 表中自动生成的数据的 options json 中以完成配置。</p>
-<p>如果使用其他s3服务做为存储生产
-用户在s3自行创建并授权 access_token 、 secret_key，将其配置到 Postgres 的 storage_server 表中自动生成的数据的 options json 中以完成配置。</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">安装成功后，通过浏览器访问登录Kuintessence </p>
