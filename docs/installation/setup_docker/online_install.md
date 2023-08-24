@@ -9,21 +9,10 @@
     ```console
     // root@localhost:~#
     $ git clone https://github.com/nsccjn/kuintessence.git
-    ```
-    使用 keycloak 注册坤仪·万象 使用者门户账号，参考[keycloak 文档](https://keycloak.org.cn/documentation.html)
-    将keyclock客户端注册信息加入env.js 
-    ```console
-    // root@localhost:~#
+    $ cd docker-compose
     $ docker-compose up -d
     ```
     </div>
-
-!!! tip "配置对象存储"
-    如果使用minio做为存储
-    用户需要先使用 docker-compose.yml 中配置的用户名密码登录（默认为 ```root : minioadmin``` ），并自行创建并授权 access_token 、 secret_key，将其配置到 Postgres 的 storage_server 表中自动生成的数据的 options json 中以完成配置。
-
-    如果使用其他s3服务做为存储生产
-    用户在s3自行创建并授权 access_token 、 secret_key，将其配置到 Postgres 的 storage_server 表中自动生成的数据的 options json 中以完成配置。
 
 !!! info "安装成功后，通过浏览器访问登录Kuintessence "
     ```sh

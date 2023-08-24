@@ -7,13 +7,17 @@
 | 端口 | 作用 | 说明 |
 | --- | --- | --- |
 | 22 | SSH | 安装、升级及管理使用 |
-| 80 | Web HTTP 服务 | 通过 HTTP 协议访问 Kuintessence 前端页面 |
-| 443 | Web HTTPS 服务 | 通过 HTTPS 协议访问 Kuintessence 前端页面 |
-| 8080 | 数据库服务 | Postgresql 服务使用 |
-| 5432 | 数据库服务 | hasura 服务使用 |
-| 6479 | 数据库服务 | Redis 服务使用 |
+| 5432 | 数据库服务 | Postgresql 服务使用 |
+| 8080 | 数据库服务 | hasura 服务使用 |
+| 6379 | 数据库服务 | Redis 服务使用 |
+| 3306 | 数据库服务 | keycloak-mariadb 服务使用 |
+| 8443 | 身份认证服务 | keycloak 服务使用 |
+| 8085 | 身份认证服务 | keycloak 服务使用 |
 | 50888 | 消息队列服务 | kafka服务使用 |
 | 9092 | 消息队列服务 | kafka平台使用 |
 | 2181 | 消息队列服务 | zookeeper服务使用 |
 | 9000 | 对象存储服务 | minio服务使用 |
 | 9001 | 对象存储服务 | minio服务使用 |
+| 80 | 反向代理服务 | nginx服务使用 |
+
+

@@ -23,7 +23,7 @@
         yum update
         yum install -y wget curl tar gettext
         ```
-## 2 数据库
+## 2 中间件
 
 
 | 名称    | 版本 | 默认字符集  | 默认字符编码  | TLS/SSL          |
@@ -40,6 +40,10 @@
 
 | 名称    | 版本 | Sentinel         | Cluster            | TLS/SSL          |
 | :------ | :------ | :--------------- | :----------------- | :--------------- |
+| nginx   | >= 1.14  | :material-check: | :material-close:   | :material-check: |
+
+| 名称    | 版本 | Sentinel         | Cluster            | TLS/SSL          |
+| :------ | :------ | :--------------- | :----------------- | :--------------- |
 | minio   | >= 2022  | :material-check: | :material-close:   | :material-check: |
 
 | 名称    | 版本 | Sentinel         | Cluster            | TLS/SSL          |
@@ -49,3 +53,11 @@
 | 名称    | 版本 | Sentinel         | Cluster            | TLS/SSL          |
 | :------ | :------ | :--------------- | :----------------- | :--------------- |
 | kafka   | >= 2.13-2.8.1  | :material-check: | :material-close:   | :material-check: |
+
+| 名称    | 版本 | Sentinel         | Cluster            | TLS/SSL          |
+| :------ | :------ | :--------------- | :----------------- | :--------------- |
+| keycloak   | >= 18.0.0  | :material-check: | :material-close:   | :material-check: |
+
+| 名称    | 版本 | Sentinel         | Cluster            | TLS/SSL          |
+| :------ | :------ | :--------------- | :----------------- | :--------------- |
+| keycloak-mariadb   | >= 10.3.18  | :material-check: | :material-close:   | :material-check: |
